@@ -33,12 +33,14 @@
         List<String> list=(List<String>) request.getAttribute("list");
     %>
     <h1>Name is <%=name %></h1>
-    <h1>List is <%
-
+     <%
         for(String friend:list){
-            System.out.println(friend);
-        }
+      %>
+    <h1><%=
+        friend
     %></h1>
+       <% }
+    %>
 
 
 
