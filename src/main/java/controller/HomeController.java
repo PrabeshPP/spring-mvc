@@ -36,6 +36,14 @@ public class HomeController{
         return modelAndView;
     }
 
+    @RequestMapping("/contact")
+    public ModelAndView contact(){
+        ModelAndView modelAndView=new ModelAndView();
+        modelAndView.setViewName("contact");
+        modelAndView.addObject("number","+977-123456789");
+        return modelAndView;
+    }
+
 
 
 
