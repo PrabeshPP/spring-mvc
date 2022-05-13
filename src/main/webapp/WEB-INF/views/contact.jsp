@@ -1,4 +1,4 @@
-<%--
+<%@ page import="java.time.LocalDateTime" %><%--
   Created by IntelliJ IDEA.
   User: prabe
   Date: 5/13/2022
@@ -13,7 +13,9 @@
 <body>
     <%
         String contact=(String)request.getAttribute("number");
+        LocalDateTime now=(LocalDateTime) request.getAttribute("date");
     %>
     <h1>You can contact us at:"<%=contact%>"</h1>
+    <h4>Current time is:<%=now%></h4>
 </body>
 </html>

@@ -5,6 +5,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,8 +41,11 @@ public class HomeController{
     @RequestMapping("/contact")
     public ModelAndView contact(){
         ModelAndView modelAndView=new ModelAndView();
+        LocalDateTime now =LocalDateTime.now();
         modelAndView.setViewName("contact");
+        modelAndView.setViewName("date");
         modelAndView.addObject("number","+977-123456789");
+        modelAndView.addObject("date",now);
         return modelAndView;
     }
 
