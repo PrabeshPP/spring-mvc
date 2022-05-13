@@ -14,6 +14,6 @@
     <%
         String contact=(String)request.getAttribute("number");
     %>
-    <h1>You can contact us at:<%=contact%></h1>
+    <h1>You can contact us at:"<%=contact%>"</h1>
 </body>
 </html>
