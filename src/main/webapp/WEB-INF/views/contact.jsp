@@ -11,6 +11,9 @@
     <title>Title</title>
 </head>
 <body>
-
+    <%
+        String contact=(String)request.getAttribute("number");
+    %>
+    <h1>You can contact us at:<%=contact%></h1>
 </body>
 </html>
