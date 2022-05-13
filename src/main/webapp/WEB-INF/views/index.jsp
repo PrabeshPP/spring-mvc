@@ -13,7 +13,7 @@
         h1{
             color: red;
             cursor: pointer;
-            font-size: 5rem;
+            font-size: 2rem;
         }
 
         h1:hover{
@@ -33,7 +33,12 @@
         List<String> list=(List<String>) request.getAttribute("list");
     %>
     <h1>Name is <%=name %></h1>
-    <h1>List is <%=list%></h1>
+    <h1>List is <%
+
+        for(String friend:list){
+            System.out.println(friend);
+        }
+    %></h1>
 
 
 
