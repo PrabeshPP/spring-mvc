@@ -43,7 +43,6 @@ public class HomeController{
         ModelAndView modelAndView=new ModelAndView();
         LocalDateTime now =LocalDateTime.now();
         modelAndView.setViewName("contact");
-        modelAndView.setViewName("date");
         modelAndView.addObject("number","+977-123456789");
         modelAndView.addObject("date",now);
         return modelAndView;
