@@ -17,7 +17,7 @@
 </head>
 <body>
 <div class="container mt-5">
-    <form>
+    <form action="/processform" method="post">
         <div class="mb-3">
 
             <label for="exampleInputEmail1" class="form-label">Email address</label>
