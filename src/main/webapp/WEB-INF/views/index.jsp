@@ -29,18 +29,7 @@
     <h1>Learning Spring MVC for Spring Boot.</h1>
     <h1>url /home</h1>
 
-    <%
-//        String name=(String)request.getAttribute("name");
-        List<String> list=(List<String>) request.getAttribute("list");
-    %>
-    <h1>Name is ${name}</h1>
-     <%
-        for(String friend:list){
-      %>
-    <h1><%=friend
-    %></h1>
-       <% }
-    %>
+  ${list}
 
 
 
