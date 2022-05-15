@@ -36,8 +36,7 @@
      <%
         for(String friend:list){
       %>
-    <h1><%=
-        friend
+    <h1><%=friend
     %></h1>
        <% }
     %>

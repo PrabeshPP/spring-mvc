@@ -12,10 +12,13 @@
 </head>
 <body>
     <h1>My Skills</h1>
-<% String[] arr=request.getParameterValues("list"); %>
-<% for(int i=0;i<arr.length;i++){
+<% String[] arr= (String[])request.getAttribute("skills"); %>
+<% for(String i:arr){
     %>
-    <h4><%=arr[i]%></h4>
+    <h4><%=i
+
+    %>
+    </h4>
    <%
 }%>
 </body>
