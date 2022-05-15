@@ -35,7 +35,6 @@
 
     <c:forEach var="item" items="${list}">
         <h1>${item}</h1>
-
     </c:forEach>
 
 
