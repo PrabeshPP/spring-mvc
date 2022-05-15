@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@page isELIgnored="false" %>
 <html>
 <head>
     <title>Spring MVC</title>
@@ -29,10 +30,10 @@
     <h1>url /home</h1>
 
     <%
-        String name=(String)request.getAttribute("name");
+//        String name=(String)request.getAttribute("name");
         List<String> list=(List<String>) request.getAttribute("list");
     %>
-    <h1>Name is <%=name %></h1>
+    <h1>Name is ${name}</h1>
      <%
         for(String friend:list){
       %>
