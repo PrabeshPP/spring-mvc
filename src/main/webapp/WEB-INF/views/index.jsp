@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@page isELIgnored="false" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title>Spring MVC</title>
@@ -29,8 +30,10 @@
     <h1>Learning Spring MVC for Spring Boot.</h1>
     <h1>url /home</h1>
 
-  ${list}
+    <c:forEach var="item" items="${list}">
+        <h1>${item}</h1>
 
+    </c:forEach>
 
 
 </body>
