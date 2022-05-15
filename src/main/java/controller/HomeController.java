@@ -48,6 +48,15 @@ public class HomeController{
         return modelAndView;
     }
 
+    @RequestMapping("/skills")
+    public ModelAndView skills(){
+        ModelAndView modelAndView=new ModelAndView();
+        String[] arr={"Java,Dart,JavaScript,HTML,CSS"};
+        modelAndView.addObject("skills",arr);
+        modelAndView.setViewName("skills");
+        return modelAndView;
+    }
+
 
 
 
