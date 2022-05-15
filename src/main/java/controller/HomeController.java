@@ -58,6 +58,10 @@ public class HomeController{
         modelAndView.setViewName("skills");
         return modelAndView;
     }
+    @RequestMapping("/form")
+    public String form(){
+        return "form";
+    }
 
 
 

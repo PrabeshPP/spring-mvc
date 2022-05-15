@@ -11,6 +11,18 @@
     <title>Form</title>
 </head>
 <body>
+    <div>
+        <form>
+            <label>UserName</label><br>
+            <input type="text"/><br>
+            <label>E-Mail</label><br>
+            <input type="email"/><br>
+            <label>PhoneNumber</label><br>
+            <input type="text"/><br>
+            <hr>
+            <button>Submit</button>
+        </form>
+    </div>
 
 </body>
 </html>
