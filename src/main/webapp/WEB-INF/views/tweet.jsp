@@ -21,7 +21,7 @@
 <body>
 
         <form action="tweets" method="post">
-            <input type="text" class="box1" />
+            <input type="text" class="box1" name="txt" />
             <button>Save</button>
         </form>
 
