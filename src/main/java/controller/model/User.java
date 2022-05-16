@@ -1,7 +1,10 @@
 package controller.model;
 
+
+
 public class User {
     private String email;
+
     private String userName;
 
     public String getEmail() {

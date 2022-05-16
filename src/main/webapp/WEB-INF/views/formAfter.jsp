@@ -13,7 +13,7 @@
 </head>
 <body>
   <h1>Log Details</h1>
-<h1>${email}</h1>
-<h2>${username}</h2>
+<h1>${user.email}</h1>
+<h2>${user.userName}</h2>
 </body>
 </html>

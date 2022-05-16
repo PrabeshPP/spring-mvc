@@ -2,6 +2,7 @@ package controller;
 
 import controller.model.User;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -18,15 +19,9 @@ public class FormController {
     }
 
     @RequestMapping(path = "/processform",method = RequestMethod.POST)
-    public ModelAndView handleForm(@RequestParam(value = "email") String email, @RequestParam("username") String username){
-        User user=new User();
-        user.setUserName(username);
-        user.setEmail(email);
-        System.out.println(user);
-        //Process
+    public ModelAndView handleForm(@ModelAttribute User user){
         ModelAndView modelAndView=new ModelAndView();
-       modelAndView.addObject("email",email);
-       modelAndView.addObject("username",username);
+       modelAndView.addObject("user",user);
        modelAndView.setViewName("formAfter");
        return modelAndView;
     }
