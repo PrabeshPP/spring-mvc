@@ -26,7 +26,7 @@
         </div>
         <div class="mb-3">
             <label for="username1" class="form-label">Username</label>
-            <input type="text" class="form-control" id="username1" name="username">
+            <input type="text" class="form-control" id="username1" name="userName">
         </div>
 
         <div class="container text-center">
