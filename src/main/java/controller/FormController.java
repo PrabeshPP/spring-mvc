@@ -25,4 +25,10 @@ public class FormController {
        modelAndView.setViewName("formAfter");
        return modelAndView;
     }
+
+    @RequestMapping("/tweet")
+    public String tweet(){
+        return "tweet";
+    }
+
 }
