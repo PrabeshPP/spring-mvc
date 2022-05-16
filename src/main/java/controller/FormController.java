@@ -3,6 +3,11 @@ package controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
 
 @Controller
 public class FormController {
@@ -11,8 +16,12 @@ public class FormController {
         return "form";
     }
 
-    @RequestMapping(path = "/processForm",method = RequestMethod.POST)
-    public String handleForm(){
-        return " ";
+    @RequestMapping(path = "/processform",method = RequestMethod.POST)
+    public ModelAndView handleForm(@RequestParam(value = "email") String email, @RequestParam("username") String username){
+        ModelAndView modelAndView=new ModelAndView();
+       modelAndView.addObject("email",email);
+       modelAndView.addObject("username",username);
+       modelAndView.setViewName("formAfter");
+       return modelAndView;
     }
 }
