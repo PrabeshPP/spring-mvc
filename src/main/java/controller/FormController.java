@@ -1,7 +1,7 @@
 package controller;
 
-import controller.model.Tweet;
-import controller.model.User;
+import model.Tweet;
+import model.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,4 +1,4 @@
-package controller.model;
+package model;
 
 public class Tweet {
     private String txt;
