@@ -12,5 +12,6 @@ public class UserService {
 
     public int createUser(User user){
         return userDao.saveUser(user);
+
     }
 }
